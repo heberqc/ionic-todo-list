@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
-import { AddItemPage } from '../add-item/add-item';
-import { ItemDetailPage } from '../item-detail/item-detail';
+import { NavController, ModalController, IonicPage } from 'ionic-angular';
+import { AddItemPage } from '../add-item/add-item'
 import { Data } from '../../providers/data/data';
 
+@IonicPage()
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -46,7 +46,7 @@ export class HomePage {
   }
 
   viewItem(item) {
-    this.navCtrl.push(ItemDetailPage, {
+    this.navCtrl.push('ItemDetailPage', {
       item: item
     });
   }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ViewController } from 'ionic-angular';
+import { NavController, ViewController, IonicPage } from 'ionic-angular';
 
 /**
  * Generated class for the AddItemPage page.
@@ -7,7 +7,7 @@ import { NavController, ViewController } from 'ionic-angular';
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
+@IonicPage()
 @Component({
   selector: 'page-add-item',
   templateUrl: 'add-item.html',
